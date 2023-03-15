@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #232529;
+    color: #FFF;
+}
+
+textarea,
+input{
+    border-radius: 10px;
+    border-color: transparent;
+}
+
+textarea{
+    padding: 20px;
+}
+
+input{
+    padding: 5px;
+}
+
+.main{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.header{
+    padding-top: 40px;
+    margin-bottom: 50px;
+    height: 50px;
+    border-bottom: 2px solid #F0F0F0;
+    display: flex;
+    align-items: center;
+}
+
+.addComment__form{
+    margin-bottom: 50px;
+}
+
+.AddText{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.hidden-alert{
+    position: absolute;
+    top: 300px;
+    opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+    transition: .8s all; /*Скорость перехода состояния элемента*/
+}
+
+.submit-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.btn__submit{
+    width: 100px;
+    background-color: #1458a1;
+    color: #F0F0F0;
+    transition: 0.2s all linear;
+    cursor: pointer;
+}
+
+.btn__submit:hover{
+    background-color: #1b82ef;
+}
+
+.comment{
+    display: flex;
+    gap: 20px;
+}
+
+.name,
+.time,
+.comment{
+    margin-bottom: 3px;
+}
+
+.time{
+    color: #AEAEAE;
+}
+
+.like-rubbish{
+    display: flex;
+    gap: 10px;
+}
+
+.like,
+.rubbish{
+    cursor: pointer;
+}
